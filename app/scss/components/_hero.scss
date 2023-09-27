@@ -1,0 +1,43 @@
+.hero {
+  background-image: url("../images/herj.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__info {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: $white;
+    font-size: 42px;
+    font-family: "robotoCondensed", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__descr {
+    margin: 0;
+    color: $white;
+    font-size: 20px;
+  }
+}
+
+.logo {
+  &__img {
+    width: 370px;
+    margin: 0 auto;
+  }
+}

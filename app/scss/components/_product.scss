@@ -1,0 +1,139 @@
+.product {
+  padding: 30px 0 24px;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    @include r(1240) {
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    left: -177px;
+    top: -50px;
+    @include r(1240) {
+      position: relative;
+      width: 597px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__info {
+    max-width: 632px;
+    width: 100%;
+  }
+
+  &__info-title {
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+    color: $blue;
+  }
+
+  &__buttons {
+    margin-bottom: 9px;
+    text-align: right;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 5px 20px;
+    color: $cedar-wood-finish;
+    border: 1px solid rgba(103, 29, 0, 0.48);
+    background: rgba(0, 0, 0, 0.55);
+    font-family: "roboto", sans-serif;
+    font-size: 12px;
+  }
+
+  &__buttons-subscription {
+    margin-right: 11px;
+  }
+
+  &__price {
+    display: flex;
+    max-width: 435px;
+    align-items: flex-end;
+  }
+  &__price span {
+    white-space: nowrap;
+    font-size: 50px;
+  }
+  &__price img {
+    max-width: 300px;
+  }
+
+  &__btn-price {
+    display: block;
+    padding: 12px 15px;
+    border-radius: 7px;
+    background-color: #fcff00;
+    color: $black;
+    font-family: "roboto" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__btn-price-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.info-list {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  &__item {
+    padding: 5px 40px 4px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 1px;
+    border: 1px solid rgba(103, 29, 0, 0.48);
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 1px;
+  }
+  &__item-left {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    -webkit-box-align: center;
+  }
+
+  &__item-right {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    width: 100%;
+  }
+
+  &__day {
+    width: 62px;
+    text-align: center;
+  }
+
+  &__img {
+    margin-right: 20px;
+    max-width: 63px;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 212px;
+  }
+}
